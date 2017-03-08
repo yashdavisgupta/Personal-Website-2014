@@ -1,0 +1,105 @@
+h1 {
+  -webkit-animation: wobble 5s ease-in-out infinite;
+          animation: wobble 5s ease-in-out infinite;
+  padding-bottom: 2em;
+@-webkit-keyframes wobble {
+  from, to {
+    -webkit-transform: rotateY(-45deg);
+            transform: rotateY(-45deg);
+  }
+  50% {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+}
+
+@keyframes wobble {
+  from, to {
+    -webkit-transform: rotateY(-45deg);
+            transform: rotateY(-45deg);
+  }
+  50% {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+  }
+}
+span {
+  font: italic 10vw Playfair Display;
+  -webkit-animation: 5s ease-in-out infinite;
+          animation: 5s ease-in-out infinite;
+  color: transparent;
+  text-shadow: 0 0 1px #f05f40;
+}
+span:nth-child(-n+4) {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+
+span:nth-child(1),
+span:nth-last-child(1) {
+  -webkit-animation-name: blur-1;
+          animation-name: blur-1;
+}
+
+@-webkit-keyframes blur-1 {
+  50% {
+    text-shadow: 0 0 0.30em #f05f40;
+  }
+}
+
+@keyframes blur-1 {
+  50% {
+    text-shadow: 0 0 0.30em #f05f40;
+  }
+}
+span:nth-child(2),
+span:nth-last-child(2) {
+  -webkit-animation-name: blur-2;
+          animation-name: blur-2;
+}
+
+@-webkit-keyframes blur-2 {
+  50% {
+    text-shadow: 0 0 0.15em #f05f40;
+  }
+}
+
+@keyframes blur-2 {
+  50% {
+    text-shadow: 0 0 0.15em #f05f40;
+  }
+}
+span:nth-child(3),
+span:nth-last-child(3) {
+  -webkit-animation-name: blur-3;
+          animation-name: blur-3;
+}
+
+@-webkit-keyframes blur-3 {
+  50% {
+    text-shadow: 0 0 0.10em #f05f40;
+  }
+}
+
+@keyframes blur-3 {
+  50% {
+    text-shadow: 0 0 0.10em #f05f40;
+  }
+}
+span:nth-child(4),
+span:nth-last-child(4) {
+  -webkit-animation-name: blur-4;
+          animation-name: blur-4;
+}
+
+@-webkit-keyframes blur-4 {
+  50% {
+    text-shadow: 0 0 0.08em #f05f40;
+  }
+}
+
+@keyframes blur-4 {
+  50% {
+    text-shadow: 0 0 0.08em #f05f40;
+  }
+}
